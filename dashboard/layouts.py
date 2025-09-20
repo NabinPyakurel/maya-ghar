@@ -1,6 +1,6 @@
 from dash import html
 
-# Tableau Public Embed Link (make sure this is workbook/dashboard link, not shared link)
+
 TABLEAU_EMBED_URL = (
     "https://public.tableau.com/views/Book1_17582585060170/Dashboard1"
     "?:embed=y&:display_count=yes&:showVizHome=no"
@@ -19,7 +19,16 @@ layout = html.Div(
     },
     children=[
         html.H1(
-            "📊 Political Stability & FDI Dashboard",
+            "Research Question: Is political stability linked to higher foreign investment?",
+            style={
+                "textAlign": "center",
+                "color": "#2c3e50",
+                "marginBottom": "20px",
+                "fontFamily": "Arial, sans-serif",
+            },
+        ),
+        html.H1(
+            "Political Stability & FDI Dashboard",
             style={
                 "textAlign": "center",
                 "color": "#2c3e50",
